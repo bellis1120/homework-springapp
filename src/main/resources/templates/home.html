@@ -20,6 +20,9 @@
         </tr>
         <tr th:each="todo:${todos}">
           <!-- TODO データを出力するためのコードを作成してください。 -->
+          <td th:text="${todo.No}"></td>
+		  <td th:text="${todo.Title}"></td>
+          <td th:text="${todo.Description}"></td>
         </tr>
     </table>
     <br>

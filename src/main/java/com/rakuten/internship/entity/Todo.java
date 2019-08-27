@@ -9,6 +9,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.GeneratedValue;
 
 //Entityクラス = DBのtable
 @Entity
@@ -18,19 +19,19 @@ public class Todo {
     // TODO 必要なコードを記入してください。
     
     @Id
-    @Column(name = "id")
-    private Integer id;
+    @GeneratedValue
+    private Integer No;
     @Column(name = "Title")
     private String Title;
     @Column(name = "Description")
     private String Description;
   
-	public Long getId() {
-		return this.id;
+	public Integer getNo() {
+		return this.No;
 	}
 
-	public void setId(Long id) {
-		this.id = id;
+	public void setId(Integer No) {
+		this.No = No;
 	}   
 	public String getTitle() {
 		return this.Title;
