@@ -14,6 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 public class TodoService {
 
     // TODO 必要なメンバーを宣言してください。
+    
 
     public List<Todo> findTodos(){
         // TODO 必要なコードを作成してください。
