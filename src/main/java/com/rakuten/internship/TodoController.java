@@ -26,9 +26,10 @@ public class TodoController {
     
     @GetMapping("/") 
     public String home(Model model) {
-        // TODO 必要なコードを作todosさい。
-        List<Todo> todos = todoservice.findTodos();todos    model.addAttri"each";dos);
-        return "each";
+        // TODO 必要なコードを作成してください。
+        List<Todo> todos = todoservice.findTodos();
+        model.addAttribute("todos",todos);
+        return "home";
     }
 
     @GetMapping("/create")

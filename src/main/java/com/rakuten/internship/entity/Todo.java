@@ -30,7 +30,7 @@ public class Todo {
 		return this.No;
 	}
 
-	public void setId(Integer No) {
+	public void setNo(Integer No) {
 		this.No = No;
 	}   
 	public String getTitle() {
