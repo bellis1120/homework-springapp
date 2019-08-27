@@ -2,9 +2,8 @@
   <title>Summer Short Internship 2019</title>
   <script type="text/javascript">
   // TODO ボタンを制御するためのJSコードを作成してください。
-  function submitfnc(action) {
-    document.sampleform.action = action;
-	document.sampleform.submit();
+  function link() {
+	document.location = "create.html";
   }
   </script>
   <body>
@@ -19,7 +18,7 @@
         <th bgcolor="#EE0000" width="150"><font color="#FFFFFF">Title</font></th>
         <th bgcolor="#EE0000" width="200"><font color="#FFFFFF">Description</font></th>
         </tr>
-        <tr th:each="todo:${todos}">
+        <tr th:each=":${todos}">
           <!-- TODO データを出力するためのコードを作成してください。 -->
           <td th:text="${todo.No}"></td>
 		  <td th:text="${todo.Title}"></td>
@@ -27,6 +26,6 @@
         </tr>
     </table>
     <br>
-    <button id="btn" value="Click" onclick="submitfnc('create.html')">Go to the form</button>
+    <button id="btn" value="Click" onClick="link()">Go to the form</button>
   </body>
 </html>
