@@ -5,6 +5,7 @@ import java.util.List;
 import com.rakuten.internship.entity.Todo;
 import com.rakuten.internship.service.TodoService;
 
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -35,12 +36,16 @@ public class TodoController {
     @GetMapping("/create")
     public String create() {
         // TODO 必要なコードを作成してください。
+        
         return null;
     }
 
     @PostMapping("/create")
     public String createTodo(@ModelAttribute Todo todo) {
         // TODO 必要なコードを作成してください。
-        return null;
+        String Title = todo.getTitle();
+        String Description = todo.getDescription();
+        todoservice.save(todo);
+        return "complete";
     }
 }
