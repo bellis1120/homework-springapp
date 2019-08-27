@@ -21,7 +21,7 @@ public class TodoService {
 
     public List<Todo> findTodos(){
         // TODO 必要なコードを作成してください。
-        return TodoRepository_DataJpa.findAll(Todo.getNo(), form.getMethod(), form.getDescription());
+        return TodoRepository_DataJpa.findAll();
         // return null;
     }
 
