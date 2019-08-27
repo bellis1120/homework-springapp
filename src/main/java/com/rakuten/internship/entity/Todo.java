@@ -11,7 +11,7 @@ public class Todo {
 	private String Title;
 	private String Description;
   
-	public Long getId() {
+	/*public Long getId() {
 		return this.id;
 	}
 
@@ -31,7 +31,7 @@ public class Todo {
 
 	public void setDescription(String Description) {
 		this.Description = Description;
-	}
+	}*/
   
 }
    
