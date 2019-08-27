@@ -14,11 +14,13 @@ import org.springframework.transaction.annotation.Transactional;
 public class TodoService {
 
     // TODO 必要なメンバーを宣言してください。
-    
+    @Autowired
+    TodoRepository TodoRepository_DataJpa;
 
     public List<Todo> findTodos(){
         // TODO 必要なコードを作成してください。
-        return null;
+        return TodoRepository_DataJpa.findAll();
+        // return null;
     }
 
     public Todo save(Todo todo) {
